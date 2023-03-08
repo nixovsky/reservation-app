@@ -21,3 +21,9 @@ The path of three "C"
 1. **C**reate an account.
 2. **C**hoose a suitable room.
 3. **C**ontact the landlord
+
+## Links
+
+[CodePen](https://codepen.io/nixxxikkk) - здесь множество других моих небольших проектов
+
+[Telegram](https://t.me/nekit1010) - для связи
