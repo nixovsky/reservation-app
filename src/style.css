@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600&display=swap');
+
+:root{
+    --background-color: #E0E0E0;
+    --fore-color: #FFFFFF;
+    --input-back-color: #F3F5FF;
+    --primary-color: #3A80CE;
+    --btn-color: #68A4CC;
+    --hover-color: #151B2F;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--background-color)
+}
+
+.modal-backgrop{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -10;
+}
+
+.header{
+    width: 100%;
+    height: 90px;
+    background: var(--fore-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.search{
+    width: 560px;
+}
+.search__space{
+    min-width: 100%;
+    padding: 10px 20px;
+    border: 1px solid var(--background-color);
+    background: var(--input-back-color);
+    border-radius: 50px;
+    font-size: 15px;
+}
+.search__space:focus{
+    outline: 1px solid var(--primary-color);
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat Alternates', sans-serif; 
+}
+.search__space::placeholder{
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    font-family: 'Montserrat Alternates', sans-serif; 
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.nav__btn{
+    border-radius: 15px;
+    background: var(--btn-color);
+    padding: 10px;
+    margin-right: 20px;
+}
+.nav__btn img{
+    width: 30px;
+    height: 30px;
+}
+.home__btn{
+    background: var(--primary-color);
+    padding: 6px;
+}
+.home__btn img{
+    width: 38px;
+    height: 38px;
+}
+.nav__btn button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.drop-box{
+    padding: 23px 44px;
+    background: white;
+    position: absolute;
+    z-index: -1;
+    top: 70px;
+    border-radius: 0 0 20px 20px;
+    filter: drop-shadow(2px 7px 3px rgba(0, 0, 0, 0.25));
+}
+.drop-box ul{
+    list-style: none;
+}
+.drop-box ul li{
+    margin-bottom: 15px;
+}
+.drop-box ul li a{
+    text-decoration: none;
+    color: var(--btn-color);
+    transition: .25s;
+}
+.drop-box ul li a:hover{
+    color: var(--hover-color);
+}
+.fade-enter-active{
+    animation: showCatalog .25s;
+}
+.fade-leave-active{
+    animation: showCatalog .25s reverse;
+}
+@keyframes showCatalog {
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);;
+    }
+}
+
+.profile{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 3px;
+    border: 3px solid var(--primary-color);
+    margin-right: 15px;
+}
+.profile__name{
+    font-size: 14px;
+}
+
+
+.profile-settings__wrapper{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.25);
+}
+.profile-settings{
+    width: 40%;
+    background: white;
+    padding: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border-radius: 20px
+}
+.profile-settings__title{
+    text-align: center;
+    margin-bottom: 17px;
+}
+.profile-settings__element{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 17px;
+}
+.profile-settings__element label{
+    margin: 0 0 7px 10px;
+}
+.profile-settings__element input{
+    letter-spacing: 1px;
+    font-size: 14px;
+    border: 1px solid var(--background-color);
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+.profile-settings__element input:focus{
+    outline: 1px solid var(--primary-color)
+}
+.profile-setting__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-settings__btn{
+    padding: 5px 40px;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Montserrat Alternates', sans-serif; 
+    letter-spacing: 1px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.profile-settings__btn:hover{
+    color: var(--hover-color);
+    background:rgba(0, 0, 0, 0.10)
+}
+.profile-settings__submit{
+    background: var(--primary-color);
+}
+.profile-settings__cancel{
+    background: var(--btn-color);
+}
