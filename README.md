@@ -1,7 +1,7 @@
 # RESERVATION
 
 Reservation was implemented on Vue version 3 from scratch, by one person - me :з
-All components on the application page are created as separate ones .vue files, this will allow you to develop and improve the application without making major changes to many files, as well as speed up debugging.
+All components on the application page are created as separate ones .vue files, this will allow you to improve the application without making major changes to many files, as well as speed up debugging.
 
 The application contains a catalog of premises that can be rented in Krasnodar.
 You can use Reservation to search for apartments, offices, as well as commercial and industrial premises.
@@ -11,7 +11,7 @@ You can use Reservation to search for apartments, offices, as well as commercial
 ---
 
 Приложение Reservation было реализовано с нуля на Vue 3, одним человеком - мной.
-Все компоненты на странице приложения созданы в виде отдельных  .vue файлов, это позволит развивать и усовершенствовать приложение, не внося серьезных изменений во множество файлов, а так же ускорит отладку.
+Все компоненты на странице приложения созданы в виде отдельных  .vue файлов, это позволит в дальейшем усовершенствовать приложение не внося серьезных изменений во множество файлов, а так же ускорит отладку.
 
 Reservation содержит каталог помещений, которые доступны для аренды в Краснодаре.
 Вы можете использовать его для поиска квартир, офисов, а так же торговых и промышленных помещений.
