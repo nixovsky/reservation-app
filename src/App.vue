@@ -1,5 +1,6 @@
 <template>
   <Header></Header>
+  <div class="block"></div>
 </template>
 
 <script>
@@ -9,7 +10,6 @@ export default {
   name: 'App',
   components: {
     Header
-  },
+  }
 }
 </script>
-
